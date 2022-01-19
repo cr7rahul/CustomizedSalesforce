@@ -26,5 +26,10 @@
       <option name="name" value="Google" />
       <option name="url" value="https://dl.google.com/dl/android/maven2/" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="SalesforceLib" />
+      <option name="name" value="SalesforceLib" />
+      <option name="url" value="https://pkgs.dev.azure.com/luhar091/_packaging/project.app/maven/v1" />
+    </remote-repository>
   </component>
 </project>

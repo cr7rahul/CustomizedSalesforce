@@ -2,4 +2,9 @@
 <servers>
     <server name="Production" url="https://login.salesforce.com" />
     <server name="Sandbox" url="https://test.salesforce.com" />
+    <server>
+        <id>luhar091</id>
+        <username>luhar091</username>
+        <password>lafafrhdryl7cdx2eftlc6ukmv3cd3i3wfwew76qisifxjdgi45a</password>
+    </server>
 </servers>

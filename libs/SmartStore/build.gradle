@@ -71,12 +71,33 @@ android {
 project.afterEvaluate {
     publishing {
         publications {
-            release(MavenPublication) {
-                groupId = 'com.salesforce.mobilesdk'
-                artifactId = 'SmartStore'
-                version = '9.2.0'
+            maven(MavenPublication) {
+                groupId = 'com.salesforce.customized'
+                artifactId = 'CustomizedSalesforceLibrary'
+                version = "1.0"
 
                 from components.release
+            }
+            release(MavenPublication) {
+                groupId = 'com.salesforce.customized'
+                artifactId = 'CustomizedSalesforceLibrary'
+                version = "1.0"
+
+                from components.release
+            }
+        }
+    }
+    repositories {
+        maven {
+            credentials {
+                username = "luhar091"
+                password = "lafafrhdryl7cdx2eftlc6ukmv3cd3i3wfwew76qisifxjdgi45a"
+            }
+
+            url 'https://pkgs.dev.azure.com/luhar091/_packaging/project.app/maven/v1'
+            name 'SalesforceLib'
+            authentication {
+                basic(BasicAuthentication)
             }
         }
     }
